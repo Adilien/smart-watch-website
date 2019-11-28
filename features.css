@@ -1,0 +1,177 @@
+body {
+	height: 200vh;
+	background: radial-gradient(
+		circle,
+		rgb(255, 255, 255),
+		rgb(241, 239, 239)
+	) !important;
+}
+
+.main-nav ul {
+	list-style: none;
+	margin-left: 50vw;
+}
+
+.home-main-section,
+.call-to-action {
+	align-self: center;
+	text-align: center;
+}
+
+.call-to-action {
+	height: 15vh;
+	width: 80vh;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.subtitle {
+	border-top: orangered solid 1px;
+	border-bottom: orangered solid 1px;
+	padding: 20px;
+	display: block;
+	margin-top: 30px;
+	align-self: center;
+}
+
+.features .feature-container {
+	width: 100%;
+	min-height: 60vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.feature-box-paragraph-style {
+	color: orangered;
+	font-size: 0.8rem;
+	width: 90%;
+	top: 30vh;
+	right: 15px;
+	font-size: 16px;
+	line-height: 2;
+	text-align: center;
+	position: absolute;
+}
+
+.feature-box-heading-style {
+	text-align: center;
+}
+
+.features .feature-boxes {
+	position: relative;
+	height: 60vh;
+	font-size: 0.7rem;
+	width: calc(90% / 3);
+	grid-row-end: calc(100% / 3);
+	background-color: rgb(255, 255, 255);
+	overflow: hidden;
+	transition: 0.5s;
+	z-index: 2;
+	box-sizing: border-box;
+	padding: 30px;
+	float: left;
+	box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.features .feature-boxes:hover {
+	box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.icon-container {
+	width: 35%;
+	height: 120px;
+}
+
+.icon-container img {
+	margin-left: 92%;
+	width: 100%;
+	height: auto;
+}
+.smart-watch-img-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.smart-watch-img-container img {
+	align-self: flex-end;
+	max-width: 80vh;
+}
+
+
+.hamburger-menu-block-change {
+	width: 30vw !important;
+	height: 28vh !important;
+}
+
+@media (max-width: 800px) {
+	body {
+		height: 300vh;
+	}
+
+	.home-main-section,
+	.call-to-action {
+		font-size: 1em;
+		align-self: center;
+		text-align: center;
+		width: 100%;
+	}
+
+	.subtitle {
+		align-self: center;
+		font-size: 0.5em;
+	}
+
+	.main-nav ul {
+		list-style: none;
+		margin-left: 0;
+	}
+
+	.feature-container {
+		text-align: center;
+	}
+
+	.features .feature-container {
+		width: 100%;
+		min-height: 15vh;
+		flex-direction: column;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		z-index: 2;
+	}
+
+	.features .feature-boxes {
+		position: absolute;
+		left: 25%;
+		width: 50%;
+		height: 60vh;
+		grid-row-end: calc(100% / 3);
+		background-color: rgb(255, 255, 255);
+		transition: 0.5s;
+		z-index: 2;
+		box-sizing: border-box;
+		padding: 30px;
+	}
+
+	.left-box {
+		transform: translateY(120%);
+	}
+
+	.right-box {
+		transform: translateY(233%);
+	}
+
+	.smart-watch-img-container {
+		display: flex;
+		justify-content: center;
+		display: none;
+	}
+	
+	.smart-watch-img-container img {
+		align-self: flex-start;
+		max-width: 80vh;
+	}
+}

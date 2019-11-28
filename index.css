@@ -1,0 +1,39 @@
+.home-main-section {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	flex-flow: 1;
+}
+
+.home-main-section .img-wrapper .watch-img {
+	min-width: 400px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.home-main-section .img-wrapper {
+	flex-grow: 1;
+	flex-direction: column;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-end;
+}
+
+.home-main-section .watch-img {
+	background-image: url(./SmartWatchPics/smart-watch-orange.png);
+	flex-grow: 1;
+	max-height: 90vh;
+	min-width: 50vw;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top right;
+	transform: translate(0);
+}
+
+.home-main-section .call-to-action {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 1rem;
+	align-self: center;
+}
